@@ -3,11 +3,10 @@ const radioService = require("../../services/radioService");
 Page({
   data: {
     station: {},
-    showWebView: false, // Estado inicial del web-view
-    showStreamers: false, // Estado inicial de los streamers
+    showWebView: false,
+    showStreamers: false,
   },
   onLoad(query) {
-    // Página cargada
     const stationId = query.stationId;
     if (stationId) {
       this.loadStationDetails(stationId);

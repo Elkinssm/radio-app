@@ -11,7 +11,7 @@ Page({
     radioService
       .getRadioStations()
       .then((res) => {
-        console.log("Response from getRadioStations:", res.data); // Verifica la respuesta
+        console.log("Response from getRadioStations:", res.data);
         this.setData({
           stations: res.data,
         });
