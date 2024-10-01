@@ -1,0 +1,7 @@
+{
+  "subPackageBuildType": "shared",
+  "pages": ["pages/stations/stations", "pages/station-detail/station-detail"],
+  "window": {
+    "defaultTitle": "My App"
+  }
+}

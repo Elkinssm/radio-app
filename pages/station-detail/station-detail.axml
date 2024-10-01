@@ -1,0 +1,13 @@
+<view>
+  <text>{{station.name}}</text>
+  <text>{{station.frequency}} {{station.band}}</text>
+  <text>{{station.city.name}}</text>
+  <button onTap="toggleWebView">Escucha aquí!!</button>
+  <button onTap="toggleStreamers">Mostrar Streamers</button>
+  <web-view a:if="{{showWebView}}" src="{{station.url}}">
+  </web-view>
+  <block a:for="{{station.streamers}}" a:key="*this">
+    <web-view a:if="{{showStreamers}}" src="{{item}}">
+    </web-view>
+  </block>
+</view>

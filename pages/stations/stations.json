@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "station-item": "/components/station-item/station-item"
+  },
+  "styleIsolation": "apply-shared"
+}

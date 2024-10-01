@@ -1,0 +1,14 @@
+{
+  "modes": [
+    {
+      "title": "stations",
+      "page": "pages/stations/stations",
+      "pageQuery": ""
+    },
+    {
+      "title": "station-detail",
+      "page": "pages/station-detail/station-detail",
+      "pageQuery": ""
+    }
+  ]
+}

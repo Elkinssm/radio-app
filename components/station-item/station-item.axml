@@ -1,0 +1,4 @@
+<view onTap="navigationToDetail">
+  <text>{{station.name}}</text>
+  <text>{{station.frequency}} {{station.band}}</text>
+</view>

@@ -1,0 +1,5 @@
+<view>
+  <block a:for="{{ stations }}" a:key="id">
+    <station-item station="{{ item }}"></station-item>
+  </block>
+</view>
