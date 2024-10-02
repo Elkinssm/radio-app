@@ -1,4 +1,6 @@
-<view onTap="navigationToDetail">
-  <text>{{station.name}}</text>
-  <text>{{station.frequency}} {{station.band}}</text>
+<view class="station-item-container" onTap="navigationToDetail">
+  <view class="station-item">
+    <text>{{station.name}}</text>
+    <text>{{station.frequency}} {{station.band}}</text>
+  </view>
 </view>
