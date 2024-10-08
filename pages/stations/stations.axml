@@ -1,5 +1,5 @@
 <view class="station-container">
   <block a:for="{{ stations }}" a:key="id">
-    <station-item station="{{ item }}"></station-item>
+    <station-item class="station-item" station="{{ item }}"></station-item>
   </block>
 </view>

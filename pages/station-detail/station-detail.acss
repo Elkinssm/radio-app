@@ -1,0 +1,89 @@
+/* Estilos para el contenedor principal */
+.station-detail-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Estilos para el encabezado */
+.station-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.station-header text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.station-header .frequency-band {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Estilos para la ciudad */
+.station-city {
+    font-size: 16px;
+    color: #999;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilos para los botones */
+.station-detail-container button {
+    padding: 10px 15px;
+    background-color: #007aff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.station-detail-container button:hover {
+    background-color: #005bb5;
+    transform: translateY(-2px);
+}
+
+.station-detail-container button:active {
+    transform: translateY(0);
+}
+
+/* Estilos para los iconos de los botones */
+.station-detail-container button .icon {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+/* Estilos para el web-view */
+.station-detail-container web-view {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Estilos para los streamers */
+.streamers-container {
+    margin-top: 20px;
+}
+
+.streamer-item {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
