@@ -1,11 +1,12 @@
-const https = require("./https");
+const { get } = require("./https");
+const { BASE_URL, RADIOS_URL } = require("./apiUrls");
 
 const getRadioStations = async () => {
-  return https.get("/Radio");
+  return get(BASE_URL, `${RADIOS_URL}/`);
 };
 
 const getRadioStationById = async (id) => {
-  return https.get(`/Radio/${id}`);
+  return get(BASE_URL, `${RADIOS_URL}/${id}`);
 };
 
 module.exports = {

@@ -1,89 +1,120 @@
 /* Estilos para el contenedor principal */
 .station-detail-container {
-    display: flex;
-    flex-direction: column;
-    padding: 24px;
-    background-color: #f7fafc;
-    border-radius: 16px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    height: 100vh;
-    box-sizing: border-box;
-    overflow-y: auto;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
 
-/* Estilos para el encabezado */
+/* Estilos para el fondo desenfocado */
+.background-blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: blur(3px);
+  z-index: -1;
+
+}
+
+/* Estilos para el contenido */
+.station-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
 .station-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 24px;
+  background-color: #FFFFFF;
+  padding: 16px;
+  border-radius: 8px;
 }
 
 .station-header text {
-    font-size: 28px;
-    font-weight: 700;
-    color: #2d3748;
-    margin-bottom: 8px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #22375c;
+  margin-bottom: 8px;
 }
 
 .station-header .frequency-band {
-    font-size: 20px;
-    color: #4a5568;
+  font-size: 20px;
+  color: #4a5568;
 }
 
 /* Estilos para la ciudad */
 .station-city {
-    font-size: 18px;
-    color: #718096;
-    margin-bottom: 24px;
-    text-align: center;
+  font-size: 18px;
+  color: #718096;
+  margin-bottom: 8px;
+  text-align: center;
+  background-color: #FFFFFF;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+/* Estilos para la descripción */
+.station-description {
+  font-size: 16px;
+  color: #4a5568;
+  margin-bottom: 24px;
+  text-align: center;
+  background-color: #FFFFFF;
+  padding: 8px;
+  border-radius: 8px;
 }
 
 /* Estilos para los botones */
 .station-detail-container button {
-    padding: 12px 18px;
-    background-color: #3182ce;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    margin-top: 12px;
-    transition: background-color 0.3s, transform 0.2s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  padding: 12px 18px;
+  background-color: #3182ce;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 12px;
+  transition: background-color 0.3s, transform 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .station-detail-container button:hover {
-    background-color: #2b6cb0;
-    transform: translateY(-2px);
+  background-color: #2b6cb0;
+  transform: translateY(-2px);
 }
 
 .station-detail-container button:active {
-    transform: translateY(0);
+  transform: translateY(0);
 }
 
-/* Estilos para el web-view */
-.web-view {
-    margin-top: 24px;
-    border: 1px solid #e2e8f0;
-    border-radius: 8px;
-    overflow: hidden;
-    flex-grow: 1;
-}
 
 /* Estilos para los streamers */
 .streamers-container {
-    margin-top: 24px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .streamer-item {
-    border: 1px solid #e2e8f0;
-    border-radius: 8px;
-    overflow: hidden;
-    flex-grow: 1;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  overflow: hidden;
+  flex-grow: 1;
 }

@@ -1,17 +1,24 @@
 <view class="station-detail-container">
-  <view class="station-header">
-    <text>{{station.name}}</text>
-    <text class="frequency-band">{{station.frequency}} {{station.band}}</text>
+  <view class="background-blur" style="background-image: url({{backgroundImage}});">
   </view>
-  <text class="station-city">{{station.city.name}}</text>
-  <button onTap="toggleWebView">Escucha aquí!!</button>
-  <button onTap="toggleStreamers">Mostrar Streamers</button>
-  <web-view a:if="{{showWebView}}" src="{{station.url}}" class="web-view">
-  </web-view>
-  <view class="streamers-container">
-    <block a:for="{{station.streamers}}" a:key="*this">
-      <web-view a:if="{{showStreamers}}" class="streamer-item" src="{{item}}">
-      </web-view>
-    </block>
+  <view class="station-content">
+    <view class="station-header">
+      <text>{{station.name}}</text>
+      <text class="frequency-band">{{station.frequency}} {{station.band}}</text>
+    </view>
+    <text class="station-city">{{station.city.name}}</text>
+    <text class="station-description">
+      Disfruta de la mejor música y programas en vivo en {{station.name}}. Sintoniza ahora y vive una experiencia única.
+    </text>
+    <button onTap="toggleWebView">Escucha aquí!!</button>
+    <button onTap="toggleStreamers">Mostrar Streamers</button>
+    <web-view a:if="{{showWebView}}" src="{{station.url}}" class="web-view">
+    </web-view>
+    <view class="streamers-container">
+      <block a:for="{{station.streamers}}" a:key="*this">
+        <web-view a:if="{{showStreamers}}" src="{{item}}">
+        </web-view>
+      </block>
+    </view>
   </view>
 </view>
