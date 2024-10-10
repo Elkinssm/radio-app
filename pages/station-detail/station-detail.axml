@@ -6,7 +6,7 @@
   <text class="station-city">{{station.city.name}}</text>
   <button onTap="toggleWebView">Escucha aquí!!</button>
   <button onTap="toggleStreamers">Mostrar Streamers</button>
-  <web-view a:if="{{showWebView}}" src="{{station.url}}">
+  <web-view a:if="{{showWebView}}" src="{{station.url}}" class="web-view">
   </web-view>
   <view class="streamers-container">
     <block a:for="{{station.streamers}}" a:key="*this">

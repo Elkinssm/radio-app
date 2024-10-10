@@ -2,12 +2,14 @@
 .station-detail-container {
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    background-color: #f0f0f0;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    margin: 0 auto;
+    padding: 24px;
+    background-color: #f7fafc;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow-y: auto;
 }
 
 /* Estilos para el encabezado */
@@ -15,38 +17,38 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 }
 
 .station-header text {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 5px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 8px;
 }
 
 .station-header .frequency-band {
-    font-size: 18px;
-    color: #666;
+    font-size: 20px;
+    color: #4a5568;
 }
 
 /* Estilos para la ciudad */
 .station-city {
-    font-size: 16px;
-    color: #999;
-    margin-bottom: 20px;
+    font-size: 18px;
+    color: #718096;
+    margin-bottom: 24px;
     text-align: center;
 }
 
 /* Estilos para los botones */
 .station-detail-container button {
-    padding: 10px 15px;
-    background-color: #007aff;
+    padding: 12px 18px;
+    background-color: #3182ce;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 12px;
     transition: background-color 0.3s, transform 0.2s;
     display: flex;
     align-items: center;
@@ -54,7 +56,7 @@
 }
 
 .station-detail-container button:hover {
-    background-color: #005bb5;
+    background-color: #2b6cb0;
     transform: translateY(-2px);
 }
 
@@ -62,28 +64,26 @@
     transform: translateY(0);
 }
 
-/* Estilos para los iconos de los botones */
-.station-detail-container button .icon {
-    margin-right: 8px;
-    font-size: 18px;
-}
-
 /* Estilos para el web-view */
-.station-detail-container web-view {
-    margin-top: 20px;
-    border: 1px solid #ddd;
+.web-view {
+    margin-top: 24px;
+    border: 1px solid #e2e8f0;
     border-radius: 8px;
     overflow: hidden;
+    flex-grow: 1;
 }
 
 /* Estilos para los streamers */
 .streamers-container {
-    margin-top: 20px;
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .streamer-item {
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #e2e8f0;
     border-radius: 8px;
     overflow: hidden;
+    flex-grow: 1;
 }

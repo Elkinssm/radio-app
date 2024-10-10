@@ -2,46 +2,51 @@
 .station-container {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  padding: 20px;
-  background-color: #f0f0f0;
+  gap: 20px;
+  padding: 24px;
+  background-color: #f7fafc;
 }
 
 /* Estilos para el ítem de estación */
 .station-item {
   display: flex;
   flex-direction: column;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s;
+  padding: 20px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .station-item:hover {
   transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 /* Estilos para el texto */
 .station-item text {
-  font-size: 16px;
-  color: #333;
-  margin-bottom: 5px;
+  font-size: 18px;
+  color: #2d3748;
+  margin-bottom: 8px;
 }
 
 /* Estilos para los botones */
 .station-item button {
-  padding: 10px 15px;
-  background-color: #007aff;
+  padding: 12px 18px;
+  background-color: #3182ce;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
-  margin-top: 10px;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
 .station-item button:hover {
-  background-color: #005bb5;
+  background-color: #2b6cb0;
+  transform: translateY(-2px);
+}
+
+.station-item button:active {
+  transform: translateY(0);
 }
